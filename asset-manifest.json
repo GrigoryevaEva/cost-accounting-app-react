@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cost-accounting-app-react/static/css/main.e8b1478c.css",
-    "main.js": "/cost-accounting-app-react/static/js/main.f093e3de.js",
+    "main.js": "/cost-accounting-app-react/static/js/main.0c95de5b.js",
     "index.html": "/cost-accounting-app-react/index.html",
     "main.e8b1478c.css.map": "/cost-accounting-app-react/static/css/main.e8b1478c.css.map",
-    "main.f093e3de.js.map": "/cost-accounting-app-react/static/js/main.f093e3de.js.map"
+    "main.0c95de5b.js.map": "/cost-accounting-app-react/static/js/main.0c95de5b.js.map"
   },
   "entrypoints": [
     "static/css/main.e8b1478c.css",
-    "static/js/main.f093e3de.js"
+    "static/js/main.0c95de5b.js"
   ]
 }
