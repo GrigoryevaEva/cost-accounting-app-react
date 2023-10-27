@@ -18,12 +18,19 @@ function InputFields(props) {
     setInputDate(event.target.value);
   }
 
+  function editTitle (title) {
+    if (!title) return;
+    title = title.trim();
+    title = title[0].toUpperCase() + title.slice(1);
+    return title;
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
 
     const costItemData = {
       date: new Date(inputDate),
-      title: inputTitle,
+      title: editTitle(inputTitle),
       price: inputPrice,
     };
 
