@@ -1,0 +1,36 @@
+//main
+
+@mixin flex ($flx-dir, $jus-con, $alg-it) {
+  display: flex;
+  flex-direction: $flx-dir;
+  justify-content: $jus-con;
+  align-items: $alg-it;
+}
+
+@mixin grid ($gap) {
+  display: grid;
+  gap: $gap;
+}
+
+@mixin border-radius () {
+  
+}
+
+//cost-item
+
+@mixin cost-item-elements () {
+  @include flex (column, center, center);
+
+  background-color: $background-color-cost-item-elements;
+
+  border-radius: 0.5rem;
+
+  color: $text-color-main;
+
+  font-size: 0.625rem;
+
+  ::selection {
+    background: $selection-background-light;
+    color: $selection-color-dark;
+  }
+}

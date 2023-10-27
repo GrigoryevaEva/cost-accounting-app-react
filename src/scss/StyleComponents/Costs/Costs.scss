@@ -1,0 +1,19 @@
+.costs {
+  @include grid (0.9rem);
+
+  background-color: $background-color-costs;
+
+  padding: 0.7rem;
+
+  &__list {
+    @include grid (0.9rem);
+  }
+
+  &__not-cost-message {
+    @include flex (row, center, center);
+
+    span {
+      font-weight: 500;
+    }
+  }
+}

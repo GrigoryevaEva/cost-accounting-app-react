@@ -1,0 +1,25 @@
+.button {
+  background-color: $background-color-button;
+  color: $text-color-main;
+
+  width: 20%;
+  min-width: 147px;
+
+  padding: 0.5rem;
+
+  border-radius: 0.5rem;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $background-color-button-hover;
+
+    transition: background-color 0.2s;
+  }
+
+  &:active {
+    background-color: $background-color-button-active;
+
+    transition: background-color 0.2s;
+  }
+}

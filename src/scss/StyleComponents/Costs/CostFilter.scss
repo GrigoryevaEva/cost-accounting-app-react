@@ -1,0 +1,72 @@
+.cost-filter {
+  @include grid (0.7rem);
+
+  &__header {
+    @include flex (row, space-between, center);
+
+    padding: 0 1rem 0 1rem;
+
+    label {
+      font-weight: 500;
+    }
+  }
+
+  &__menu {
+    background-color: $background-color-menu;
+    color: $text-color-main;
+    
+    width: 10%;
+    min-width: 62px;
+
+    border-radius: 0.3rem;
+
+    padding: 0.2rem;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $background-color-button-hover;
+
+      transition: background-color 0.2s;
+    }
+  }
+}
+
+.cost-filter-graph {
+  @include grid (0.3rem);
+  grid-template-columns: repeat(12, 1fr);
+
+  background-color: $background-color-cost-filter-graph;
+
+  padding: 0.5rem  0 0.5rem 0;
+
+  &__element {
+    @include flex (column, auto, center);
+    gap: 0.2rem;
+
+    &-inner {
+      @include flex (column, flex-end, center);
+
+      height: 5rem;
+      width: 0.8rem;
+
+      background-color: $background-color-cost-filter-graph-inner;
+
+      border-radius: 0.5rem;
+
+      overflow: hidden;
+    }
+
+    &-fill {
+      background-color: $background-color-cost-filter-graph-fill;
+      width: 100%;
+
+      transition: all 0.3s ease-out;
+    }
+
+    &-month {
+      color: $text-color-main;
+      font-size: 0.7rem;
+    }
+  }
+}

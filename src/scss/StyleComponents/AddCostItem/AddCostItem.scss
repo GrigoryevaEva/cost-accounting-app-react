@@ -1,0 +1,14 @@
+.add-cost-item {
+  @include flex (column, center, center);
+
+  background-color: $background-color-add-cost-item;
+  
+  padding: 1rem;
+
+  &__form {
+    @include flex (column, center, center);
+    gap: 1.3rem;
+
+    width: 100%;
+  }
+}

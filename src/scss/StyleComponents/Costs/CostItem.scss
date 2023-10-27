@@ -1,0 +1,44 @@
+.cost-item {
+  @include flex (row, default, center);
+
+  background-color: $background-color-cost-item;
+
+  padding: 0.5rem;
+
+  &__date {
+    @include cost-item-elements();
+    width: 4rem;
+    height: 4rem;
+
+    gap: 0.15rem;
+
+    &-year {
+      font-weight: normal;
+    }
+
+    &-day {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__description {
+    @include flex (row, space-between, center);
+    flex: 1;
+  }
+
+  &__title {
+    color: $text-color-main;
+    font-size: 1.125rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__price {
+    @include cost-item-elements();
+
+    font-size: 1rem;
+    text-align: center;
+
+    padding: 0.3rem 1rem;
+  }
+}
